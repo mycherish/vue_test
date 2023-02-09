@@ -1,7 +1,7 @@
 <template>
   <div>
     <School />
-    
+    <hr>
     <Student />
   </div>
 </template>
@@ -15,3 +15,7 @@ export default {
     components: {Student, School}
 }
 </script>
+
+<style>
+
+</style>

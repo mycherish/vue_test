@@ -1,17 +1,18 @@
 <template>
   <div>
-    <School />
-    
-    <Student />
+    <Student name="里斯" sex="女" :age="19"/>
   </div>
 </template>
 
 <script>
 // 引入 School 组件
 import Student from './components/Student'
-import School from './components/School'
 export default {
     name: 'App',
-    components: {Student, School}
+    components: {Student}
 }
 </script>
+
+<style>
+
+</style>

@@ -1,11 +1,12 @@
 <template>
-  <div class="demo">
-    <h2>姓名：{{ name }}</h2>
+  <div>
+    <h2 @click="showName">姓名：{{ name }}</h2>
     <h2>性别：{{ sex }}</h2>
   </div>
 </template>
 
 <script>
+import {hunhe} from '../mixin'
 export default {
     name: 'Student',
     data() {
@@ -13,12 +14,7 @@ export default {
           name: '逻辑',
           sex: '男'
         }
-    }
+    },
+    mixins: [hunhe]
 }
 </script>
-
-<style scoped>
-  .demo{
-    background-color: orange;
-  }
-</style>
